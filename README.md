@@ -26,3 +26,5 @@ An Example is following code.
 
 This filter filters tweets whose client name is 'twittbot'.
 Example of a:tweet is available at doc/example\_of\_tweet\_dict.txt
+
+This plugin is distributed under MIT license.
