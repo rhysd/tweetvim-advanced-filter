@@ -16,12 +16,12 @@ not.
 An Example is following code.
 
 
-  let g:tweetvim\_advanced\_filter = {}
+    let g:tweetvim\_advanced\_filter = {}
 
-  function! g:tweetvim\_advanced\_filter.func(tweet)
-    let source = matchstr(a:tweet.source, '^<a href="[^>]\+>\zs.\+\ze<\/a>$')
-    return source == 'twittbot'
-  endfunction
+    function! g:tweetvim\_advanced\_filter.func(tweet)
+        let source = matchstr(a:tweet.source, '^<a href="[^>]\+>\zs.\+\ze<\/a>$')
+        return source == 'twittbot'
+    endfunction
 
 
 This filter filters tweets whose client name is 'twittbot'.
