@@ -16,9 +16,9 @@ not.
 An Example is following code.
 
 
-    let g:tweetvim\_advanced\_filter = {}
+    let g:tweetvim_advanced_filter = {}
 
-    function! g:tweetvim\_advanced\_filter.func(tweet)
+    function! g:tweetvim_advanced_filter.func(tweet)
         let source = matchstr(a:tweet.source, '^<a href="[^>]\+>\zs.\+\ze<\/a>$')
         return source == 'twittbot'
     endfunction
