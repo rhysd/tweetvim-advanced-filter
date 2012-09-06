@@ -9,5 +9,5 @@ function! tweetvim#filter#advanced#execute(tweets)
         return a:tweets
     endif
 
-    return filter(a:tweets, "g:tweetvim_advanced_filter.func(v:val)")
+    return filter(a:tweets, "!g:tweetvim_advanced_filter.func(v:val)")
 endfunction
