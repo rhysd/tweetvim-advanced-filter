@@ -5,9 +5,9 @@
 
 function! tweetvim#filter#advanced#execute(tweets)
     if !exists('g:tweetvim_advanced_filter')
-                \ || !has_key(g:tweetvim_advanced_filter, 'func')
+                \ || !has_key(g:tweetvim_advanced_filter, 'executor')
         return a:tweets
     endif
 
-    return filter(a:tweets, "!g:tweetvim_advanced_filter.func(v:val)")
+    return filter(a:tweets, "!g:tweetvim_advanced_filter.executor(v:val)")
 endfunction
